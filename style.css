@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 600px)
+@media (min-width: 1000px)
 {
     .container {
         display: flex;
@@ -124,15 +124,15 @@
     }
 }
 
-@media (max-width: 600px)
+@media (max-width: 1000px)
 {
     .container {
         display: flex;
+        flex-direction: column;
         margin: 0px;
         padding: 0px;
         height: 100%;
         width: 100%;
-        flex-direction: column-reverse;
         position: relative;
         z-index: 1;
     }
@@ -144,8 +144,17 @@
         padding: 0px;
         margin: 0px;
         justify-content: space-around;
-        height: 45%;
-        width: 150%;
+        height: 100vh;
+        width: 300vw;
+    }
+
+    .leftitem {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin: 2rem;
+        padding-right: 10rem;
+        gap: 2rem;
     }
     
     .heading {
@@ -192,15 +201,17 @@
     
     .right {
         display: flex;
-        flex-direction: column;
-        width: 55%;
+        flex-direction: column;;
+        padding-top: 3rem;
+        padding-right: 11rem;
         height: 100vh;
+        width: 300vw;
     }
     
     .nav {
         display: flex;
         justify-content: space-between;
-        padding: 20px 15px;
+        padding: 10px 7.5px;
     }
     .navigation{
         align-self: center;
@@ -233,12 +244,10 @@
     }
     
     .bi {
-        height: 200px;
-        width: 300px;
         position: absolute;
         z-index: 4;
-        margin-left: 0;
-        margin-bottom: 130%;
+        margin-left: 5rem;
+        margin-top: 49rem;
     }
     
     .item {
